@@ -63,13 +63,13 @@ p, #footer {
 }
 
 #footer {
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 
 #footer a {
     text-decoration: none;
     font-weight: 500;
-    margin-bottom: 40.83px;
+    padding-bottom: 40.83px;
 }
 
 span, #footer a {
@@ -93,11 +93,42 @@ span, #footer a {
 
 .wave {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .wave img {
     object-fit: cover;
+    width: 100%
 }
 
+@media(max-width: 1100px) {
+    #hero {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+        margin: 5rem auto 0px;
+    }
+    #hero {
+        width: 250px;
+        margin: 5rem auto 0px;
+    } 
+    .line {
+        width: 19.5rem;
+        height: 0rem;
+        border: 0.063rem solid #ECEFF2;
+        margin: 2.5rem auto 2.5rem;
+    }
+    .wave img {
+        object-fit: cover;
+        width: 100%
+    }
+    h1 {
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin: 2.5rem auto 2.5rem;
+    }
+}
